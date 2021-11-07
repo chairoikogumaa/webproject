@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./cssjs/css01.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="./favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="./cssjs/js01.js"></script>
+    <title>해피멍스데이</title>
+</head>
+<body class="w3-content" style="max-width:1040px">
+    <div id="page">
+        <div>
+            <div class="top w3-text-white w3-container" id="gotop">
+                <a>
+                    <i class="fa fa-arrow-up w3-display-middle" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+
+
+        <header id="header">
+            <div id="logo" class="w3-left">
+                <img src="./img/logo.png" id="logo01" alt="logo" width=21%>
+            </div>
+
+            <div id="top_menu" onclick="top_menu();">
+                <a href="#"> 로그인 </a> |
+                <a href="#"> 회원가입 </a> |
+                <a href="#"> 마이페이지 </a> |
+                <a href="#"> 장바구니 </a>
+            </div>
+            <div id="rja">
+                <form class = 'search'>
+                    <input class = 'keyword' type = 'text' name = 'search' value = "" autocomplete = "off" placeholder="&nbsp&nbsp 3만원 이상 구매 시 무료 배송">
+                    <button class = "img-button" type = "submit" name = "click" value = "" onclick="rja();">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </header>
+        <hr>
+        <nav>
+            <ul>
+                <li> <a href="#" class="w3-wide"> 기록 </a> </li>
+                <li> <a href="#" class="w3-wide"> 건강 </a> </li>
+                <li> <a href="#" class="w3-wide"> 식품 </a> </li>
+                <li> <a href="#" class="w3-wide"> 용품 </a> </li>
+            </ul>
+        </nav>
+        
+
+        <div id="slide" class="w3-content w3-display-container" style="max-width:1040px">
+            <img class="mySlides" src="./img/slide01.jpg" style="width:100%">
+            <img class="mySlides" src="./img/slide02.jpg" style="width:100%">
+            <img class="mySlides" src="./img/slide03.jpg" style="width:100%">
+            <div class="w3-center w3-container w3-section w3-xlarge w3-text-white w3-display-bottommiddle" style="width:100%">
+              <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function currentDiv(n) {
+              showDivs(slideIndex = n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+              }
+              x[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " w3-white";
+            }
+        </script>
+        <br>
+        <div class="w3-container" id="page01">
+            <article>
+                <section id="content" class="w3-medium">
+                    <h2> 주간 랭킹 </h2>
+                    <table class="w3-table w3-bordered w3-hoverable">
+                        <tr class="w3-amber w3-center">
+                            <th class="w3-center" > 순위 </th>
+                            <th class="w3-center"> 상품 </th>
+                            <th class="w3-center"> 가격 </th>
+                        </tr>
+                        <tr>
+                            <td class="w3-center"> <p>1</p>  </td>
+                            <td ><img src=./img/01.png width="100px">
+                                <h3 class="w3-center w3-medium">반려소반 닭가슴살</h3>
+                            </td>
+                            <td class="w3-center "> <p>6,900원</p></td>
+                        </tr>
+                        <tr>
+                            <td class="w3-center"> <p>2</p> </td>
+                            <td><img src=./img/02.png width="100px">
+                                <h3 class="w3-center w3-medium"> 시저 4가지맛, 캔 24개입</h3>
+                            </td>
+                            <td class="w3-center"> <p> 29,900원</p></td>
+                        </tr>
+                        <tr>
+                            <td class="w3-center"> <p>3</p> </td>
+                            <td><img src=./img/03.png width="100px">
+                                <h3 class="w3-center w3-medium">펫 스웨트 애견용 이온음료 500ml</h3>
+                            </td>
+                            <td class="w3-center"> <p>2,500원</p> </td>
+                        </tr>
+                    </table>
+                </section>
+                <br> <br> <br> <br>
+                <section id="videoth">
+                    <h2> 함께봐요! 좋은 정보 </h2>
+                    <div class="w3-row-padding w3-margin-top">
+                        <div class="w3-third w3-content">
+                            <div class="w3-card container">
+                                <a href="https://www.youtube.com/watch?v=0C4IWEycU8Q">
+                                    <img src="./img/th01.jpg" style="width:100%">
+                                    <div class="overlay">
+                                        <div class="text">이동</div>
+                                    </div>
+                                    <div class="w3-container w3-center">
+                                        <p> 강아지 산책 시 주의사항</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w3-third w3-content">
+                            <div class="w3-card container">
+                                <a href="https://www.youtube.com/watch?v=k0FXrVWYFaY">
+                                    <img src="./img/th02.jpg" style="width:100%">
+                                    <div class="overlay">
+                                        <div class="text">이동</div>
+                                    </div>
+                                    <div class="w3-container w3-center">
+                                        <p> 강아지 알레르기 증상과 원인</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w3-third w3-content">
+                            <div class="w3-card container">
+                                <a href="https://www.youtube.com/watch?v=h6oPFujMh4g">
+                                    <img src="./img/th03.jpg" style="width:100%">
+                                    <div class="overlay">
+                                        <div class="text">이동</div>
+                                    </div>
+                                    <div class="w3-container w3-center">
+                                        <p> 강아지가 먹으면 위험한 음식</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br> <br> <br> <br>
+                <section id="pet">
+                    <h2> 도전! 주간 펫피 </h2>
+                    <div class="w3-row-padding w3-margin-top">
+                        <div class="w3-third w3-content container1">
+                          <div class="w3-card">
+                            <img src="./img/pet01.jpg" style="width:100%" class="image2">
+                            <div class="overlay2">호두</div>
+                          </div>
+                        </div>
+                        <div class="w3-third w3-content container1">
+                            <div class="w3-card">
+                              <img src="./img/pet02.jpg" style="width:100%" class="image2">
+                              <div class="overlay2">감자</div>
+                            </div>
+                          </div>
+                          <div class="w3-third w3-content container1">
+                            <div class="w3-card">
+                              <img src="./img/pet03.jpg" style="width:100%" class="image2">
+                              <div class="overlay2">연두</div>
+                            </div>
+                          </div>
+                          <div class="w3-third w3-content container1">
+                            <div class="w3-card">
+                              <img src="./img/pet04.jpg" style="width:100%" class="image2">
+                              <div class="overlay2">콩이</div>
+                            </div>
+                          </div>
+                          <div class="w3-third w3-content container1">
+                            <div class="w3-card">
+                              <img src="./img/pet05.jpg" style="width:100%" class="image2">
+                              <div class="overlay2">밥풀이</div>
+                            </div>
+                          </div>
+                          <div class="w3-third w3-content container1">
+                            <div class="w3-card">
+                              <img src="./img/pet06.jpg" style="width:100%" class="image2">
+                              <div class="overlay2">양말이</div>
+                            </div>
+                          </div>
+                           
+                      </div>
+                </section>
+                <br>
+                <section>
+                    <div class="w3-container w3-center">
+                        <div class="w3-bar">
+                          <a href="#" class="w3-button">&laquo;</a>
+                          <a href="#" class="w3-button">1</a>
+                          <a href="#" class="w3-button">2</a>
+                          <a href="#" class="w3-button">3</a>
+                          <a href="#" class="w3-button">4</a>
+                          <a href="#" class="w3-button">&raquo;</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <aside>
+                <div id="login" class="w3-container">
+                    <h3> 로그인 </h3>
+                    <div id="boxx">
+                        <div id="loginbox">
+                            <div id="idbox">
+                                <input type="text" name="" id="id" placeholder="&nbsp;ID"><br>
+                            </div>
+                            <div id="pwbox">
+                                <input type="password" name="" id="pw" placeholder="&nbsp;PW"><br>
+                            </div>
+                            <button id="loginbutton" onclick="login();">로그인</button>
+                            <button id="join" onclick="join();">회원가입</button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div id="notice" class="w3-container">
+                    <h3> 공지사항 </h3>
+                    <div id="noticebox">
+                        <ul  onclick="notice()">
+                            <li>카카오 플러스 친구 추가 20%할인 받는 방법</li>
+                            <li>카카오 플러스 친구 만원 할인 쿠폰 받는 방법</li>
+                            <li>2021 블랙프라이데이 관련 공지</li>
+                            <li>배송비 관련 안내</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+
+            </aside>
+
+            <section>
+                <div class="float1" onclick="kakao();">
+                    <div class="w3-display-container">
+                        <div class="w3-display-middle">
+                            <span class="material-icons" style="font-size: 15pt;"> support_agent </span> 
+                            카카오톡 상담
+                        </div>
+                    </div>
+                </div>
+                <div class="float2" onclick="inquiry();">
+                    <div class="w3-display-container">
+                        <div class="w3-display-middle">
+                            <span class="material-icons"> drive_file_rename_outline </span> 
+                            1:1 문의
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <br><br>
+
+        <footer class="w3-row-padding w3-padding-16" id="footer">
+            <div class="w3-third">
+                <h2>
+                    <span class="material-icons">
+                        support_agent
+                        </span>
+                    051-200-700</h2>
+                <p>평일 : 09:00 ~ 18:00 </p> 
+                <p>주말 · 공휴일 : 휴무 </p>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook" style="font-size:24px;color:#867d76">&nbsp;&nbsp;</i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter" style="font-size:24px;color:#867d76">&nbsp;&nbsp;</i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram" style="font-size:24px;color:#867d76">&nbsp;&nbsp;</i></a>
+            </div>
+            <div class="w3-twothird w3-serif">
+                <div id="footerright">
+                    
+                    <h2 id="hmd">해피 멍스 데이</h2>
+                    <p>(주) 해피 멍스 데이 | 대표 : 박솔희 | 사업자등록번호 : 000-00-00000 </p>
+                    <p>개인정보보호책임자 : *** | 주소 :  부산 서구 부민동 2가 1</p>
+                    <p>팩스 : 051-200-700 | 이메일 : ouosolhi512@donga.ac.kr</p>
+                    <div>
+                        <div  style="font-size: 3pt;">Icons made by <a href="https://www.freepik.com" title="Freepik"  style="font-size: 3pt;">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" style="font-size: 3pt;">www.flaticon.com</a></div>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/footer01.jpg" alt="footer" id="ffooter">
+
+            
+        </footer>
+        
+            <!--
+                <div>
+                <div>
+                    <h5> Contact</h5>
+                    <ul>
+                     <li>Phone : 010 **** ****</li>
+                     <li>Email : ouosolhi512@donga.ac.kr</li>
+                    </ul>
+                </div>
+                <div >
+                    <h5> Follow </h5>
+                    
+                </div>
+            </div>
+            -->
+    </div>
+</body>
+</html>

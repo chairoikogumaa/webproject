@@ -1,0 +1,411 @@
+*{ font-size: 12pt;
+    font-family: 'Noto Sans KR', sans-serif;
+    }
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+body{max-width: 1040px ; 
+    margin: 0 auto; 
+    min-width: 1040px; 
+}
+
+@font-face { 
+
+    font-family: "HancomMalangMalangRegular";  
+    src:url("./font/HancomMalangMalang-Regular.otf") format("opentype");
+    font-style:normal;  /* 선택속성 */
+    font-weight:normal;  /* 선택속성 */
+
+}     
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+nav ul{list-style: none;}
+a{text-decoration: none;}
+nav ul li{
+    display: inline;
+    padding: 10px;
+
+}
+nav ul li:hover {
+    background-color: #ffca28;
+    color: #ffffff;
+}
+
+#page01{display: flex;}
+header{
+    height: 100px;
+}
+footer{
+    height: 100%;
+    background-color: #eee7e2;
+    color: #867d76;
+}
+footer div h2{
+    font-size: 18pt;
+    font-weight: bolder;
+    font-family: HancomMalangMalangRegular;
+}
+footer div p{
+    font-size: 10pt;
+}
+
+#footerright{
+    font-size: 8pt;
+    text-align: right;
+}
+#ffooter{
+    width: 1024px;
+    display: inline-block;
+    
+}
+
+/*article, aside, nav{
+    height: calc(100vh - 100px);
+} */
+#page01 {
+    height: calc(100vh-calc(header+nav+mySlides));
+}
+
+
+article{flex: 3; display: inline-block;}
+aside{flex: 1;}
+
+header{position: relative;
+    margin-top: 20px;}
+#top_menu{
+    color: #afafaf;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+#logo{
+    position: absolute;
+    height: 100px;
+    top: 20px;
+}
+nav{
+    height: 40px;
+    text-align: center;
+}
+
+.search{
+    border: 2px solid #ffca28;
+    border-radius: 20px;
+    position: absolute;
+    top: 30px;
+    left: 240px;
+    width: 340px;
+    height: 40px;
+}
+
+button.img-button{
+    border: none;
+    background: transparent;
+    color: #ffca28;
+}
+.fas{
+    color: #ffca28;
+}
+.keyword{
+    border : none;
+    outline: none;
+    background: transparent;
+    width: 300px;
+    color: #8c6d62;
+    padding: 6px 0 0 10px;
+}
+#gotop{
+    position: fixed; 
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: #ffca28;
+    text-align: center;
+    
+}
+table{
+    outline: none;
+}
+
+div article section h2{
+    text-align: left;
+    margin-left: 50px;
+    color: #1d1102;
+    font-size: 16pt;
+    font-weight: bolder;
+}
+
+div article section table tr td{
+    position: relative;
+}
+div article section table tr td h3{
+    position: absolute;
+    top: 40px;
+    left: 150px;
+}
+div article section table tr td p{
+    position: absolute;
+    top: 30px;
+    left: 80px;
+
+}
+
+
+#videoth div div div{
+    border-radius: 10px;
+}
+#videoth div div div img{
+    border-radius: 10px 10px 0 0;
+}
+#videoth div div div div p{
+    font-size: 10pt;
+}
+
+.container {
+    position: relative;
+  }
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffc928c4;
+  }
+  
+.container:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: -1px 0 #8c6d62, 0 1px #8c6d62, 1px 0 #8c6d62, 0 -1px #8c6d62;
+}
+
+.container1 {
+    position: relative;
+}
+  
+.image {
+    display: block;
+    height: auto;
+}
+  
+.overlay2 {
+    position: absolute; 
+    left: 9px;
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 217px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+  
+.container1:hover .overlay2 {
+    opacity: 1;
+}
+
+
+aside div h3{
+    text-align: left    ;
+    margin-left: 20px;
+    color: #1d1102;
+    font-size: 16pt;
+    font-weight: bolder;
+    
+}
+
+#boxx{
+    width: 240px;
+    height: 230px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    position: relative;
+}
+#loginbox p{
+    text-align: center;
+}
+
+#idbox{
+    padding: 10px 10px 0 10px;
+}
+aside div div div div input{
+    border: none;
+    background-color: #f0f0f0;
+}
+
+#pwbox{
+    padding: 5px 10px 0 10px;
+}
+
+aside div div div div input{
+    height: 40px;
+}
+#loginbutton{
+    margin: 15px 0 0;
+    width: 90%;
+    background-color: #ffca28;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#join{
+    margin: 15px 0 0;
+    width: 90%;
+    background-color: #ffca28;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section div div{
+    margin: 3px;
+}
+
+#pet div div{
+    border-radius: 20px;
+}
+#pet div div img{
+    border-radius: 20px;
+}
+input::placeholder {
+    color: #cccccc;
+}
+
+
+.float1{
+    position: fixed;
+    display: inline-block;
+    bottom: 200px; 
+    right: 0;
+    z-index: 99;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px 0 00;
+    background-color: #8c6d62;
+}
+
+
+.float1 div div{
+    display: inline;
+    position: absolute;
+    top: 18px;
+    width: 100%;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.float2{
+    position: fixed;
+    display: inline-block;
+    bottom: 160px; 
+    right: 0;
+    z-index: 99;
+    width: 140px;
+    height: 40px;
+    border-radius: 0 0 0 20px;
+    background-color: #8c6d62;
+}
+
+
+.float2 div div{
+    display: inline;
+    position: absolute;
+    top: 12px;
+    width: 100%;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+#noticebox{ 
+    width: 240px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    position: relative;
+}
+#noticebox ul {
+    padding-left: 10px;
+}
+#noticebox ul li{
+    list-style: none;
+    font-size: 10pt;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#noticebox ul li:hover {
+    color: #8c6d62;
+}
+
+#noticebox ul li:before {
+    content: "·";
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 5px 6px 0px;
+}
+
