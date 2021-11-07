@@ -10,12 +10,10 @@ body{max-width: 1040px ;
 }
 
 @font-face { 
-
     font-family: "HancomMalangMalangRegular";  
     src:url("./font/HancomMalangMalang-Regular.otf") format("opentype");
-    font-style:normal;  /* 선택속성 */
-    font-weight:normal;  /* 선택속성 */
-
+    font-style:normal;
+    font-weight:normal;
 }     
 
 @font-face {
@@ -28,7 +26,7 @@ body{max-width: 1040px ;
       url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
       url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
       url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-  }
+}
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
