@@ -10,10 +10,10 @@ body{max-width: 1040px ;
 }
 
 @font-face { 
-    font-family: "HancomMalangMalangRegular";  
-    src:url("./font/HancomMalangMalang-Regular.otf") format("opentype");
-    font-style:normal;
-    font-weight:normal;
+    font-family: 'malang';  
+    src: url("../font/HancomMalangMalangRegular.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
 }     
 
 @font-face {
@@ -76,7 +76,7 @@ footer{
 footer div h2{
     font-size: 18pt;
     font-weight: bolder;
-    font-family: HancomMalangMalangRegular;
+    font-family: malang;
 }
 footer div p{
     font-size: 10pt;
