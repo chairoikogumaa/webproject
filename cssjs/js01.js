@@ -1,3 +1,35 @@
+let idtext= '';
+let pwtext= '';
+function clickidtext(){
+    idtext = document.getElementById("id");
+    idtext.addEventListener("focus", bgcolor);
+    idtext.addEventListener("blur", myfunc);
+}
+function clickpwtext(){
+    pwtext = document.getElementById("pw");
+    pwtext.addEventListener("focus", bgcolor1);
+    pwtext.addEventListener("blur", myfunc1);
+}
+
+function bgcolor(){
+    idtext.style.backgroundColor="#F3E6BD";
+    idtext.style.color="#8c6d62"
+}
+function myfunc(){
+    idtext.style.backgroundColor="#F0F0F0";
+    idtext.style.color="#1d1102"
+}
+
+function bgcolor1(){
+    pwtext.style.backgroundColor="#F3E6BD";
+    pwtext.style.color="#8c6d62"
+}
+function myfunc1(){
+    pwtext.style.backgroundColor="#F0F0F0";
+    pwtext.style.color="#1d1102"
+}
+
+
 function top_menu(){
     alert("페이지가 준비중입니다.");}
 
@@ -18,6 +50,8 @@ function login(){
     }else{
         alert("회원가입을 하세요");
     }
+
+
 
 
 
@@ -59,5 +93,4 @@ document.addEventListener('DOMContentLoaded', function(){
         scrollToTop();
     });
 });
-
 
