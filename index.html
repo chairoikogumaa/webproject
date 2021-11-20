@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./cssjs/css01.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
     <link rel="shortcut icon" href="./favicon/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -27,43 +28,31 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
-    <script src="./cssjs/js01.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script> 
+    <script src="./cssjs/js01.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $('#close').click(function() {
+            $('#pop').hide();
+          });
+        });
+    </script>
     <title>해피멍스데이</title>
 </head>
 <body class="w3-content" style="max-width:1040px" onload="clickidtext();clickpwtext();">
-    <div id="page"></div>
-            
-            <!-- The Modal -->
-        <div id="myModal" class="modal">
-    
-            <!-- Modal content -->
-            <div class="modal-content">
-                    <p style="text-align: center;"><span style="font-size: 14pt;"><b><span style="font-size: 24pt;">공지</span></b></span></p>
-                    <p style="text-align: center; line-height: 1.5;"><br /> 카카오 플러스 친구 추가 시 20% 할인 쿠폰 발행 이벤트 중! </p>
-                    <p><br /></p>
-                <div style="cursor:pointer;background-color:#ffca28;text-align: center;padding-bottom: 10px;padding-top: 10px;" onClick="close_pop();">
-                    <span class="pop_bt" style="font-size: 13pt;" >
-                        닫기
-                    </span>
+    <div id="page">
+        <div id="pop">
+            <div>
+                <img src="./img/notice.jpg" alt="popupnotice" >
+            </div>
+            <div>
+                <div id="close">
+                    [닫기]
                 </div>
             </div>
-            <script type="text/javascript">
-      
-                jQuery(document).ready(function() {
-                        $('#myModal').show();
-                });
-                //팝업 Close 기능
-                function close_pop(flag) {
-                     $('#myModal').hide();
-                };
-                
-            </script>
-        
-    
         </div>
-            <!--End Modal-->
+
+
   
         <div>
             <div class="top w3-text-white w3-container" id="gotop">
