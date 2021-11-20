@@ -29,10 +29,42 @@
     <meta name="theme-color" content="#ffffff">
 
     <script src="./cssjs/js01.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script> 
     <title>해피멍스데이</title>
 </head>
-<body class="w3-content" style="max-width:1040px">
-    <div id="page">
+<body class="w3-content" style="max-width:1040px" onload="clickidtext();clickpwtext();">
+    <div id="page"></div>
+            
+            <!-- The Modal -->
+        <div id="myModal" class="modal">
+    
+            <!-- Modal content -->
+            <div class="modal-content">
+                    <p style="text-align: center;"><span style="font-size: 14pt;"><b><span style="font-size: 24pt;">공지</span></b></span></p>
+                    <p style="text-align: center; line-height: 1.5;"><br /> 카카오 플러스 친구 추가 시 20% 할인 쿠폰 발행 이벤트 중! </p>
+                    <p><br /></p>
+                <div style="cursor:pointer;background-color:#ffca28;text-align: center;padding-bottom: 10px;padding-top: 10px;" onClick="close_pop();">
+                    <span class="pop_bt" style="font-size: 13pt;" >
+                        닫기
+                    </span>
+                </div>
+            </div>
+            <script type="text/javascript">
+      
+                jQuery(document).ready(function() {
+                        $('#myModal').show();
+                });
+                //팝업 Close 기능
+                function close_pop(flag) {
+                     $('#myModal').hide();
+                };
+                
+            </script>
+        
+    
+        </div>
+            <!--End Modal-->
+  
         <div>
             <div class="top w3-text-white w3-container" id="gotop">
                 <a>
@@ -60,7 +92,6 @@
                 </form>
             </div>
         </header>
-        <hr>
         <nav>
             <ul>
                 <li> <a href="#" class="w3-wide"> 기록 </a> </li>
@@ -248,7 +279,7 @@
                 </section>
             </article>
             <aside>
-                <div id="login" class="w3-container">
+                <div id="login" class="w3-container" >
                     <h3> 로그인 </h3>
                     <div id="boxx">
                         <div id="loginbox">
@@ -278,7 +309,7 @@
                     </div>
                 </div>
             </aside>
-            <section>
+            <section id="allfloat">
                 <div class="float1" onclick="kakao();">
                     <div class="w3-display-container">
                         <div class="w3-display-middle">
@@ -322,6 +353,8 @@
                 </div>
             </div>
             <img src="./img/footer01.jpg" alt="footer" id="ffooter">
+
+            
         </footer>
     </div>
 </body>
