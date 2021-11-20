@@ -52,37 +52,48 @@ body{max-width: 1040px ;
   font-feature-settings: 'liga';
 }
 
-nav ul{list-style: none;}
-a{text-decoration: none;}
-nav ul li{
-    display: inline;
-    padding: 10px;
-
+nav{
+    border: #afafaf 0 1px 0 0 solid;
+    text-align: center;
 }
+nav ul{
+    list-style: none;
+}
+a{text-decoration: none;}
+
 nav ul li:hover {
     background-color: #ffca28;
     color: #ffffff;
 }
 
+nav ul{
+    display: flex;
+}
+nav ul li{
+    flex: 1;
+    padding: 10px;
+}
+
 #page01{display: flex;}
 header{
-    height: 100px;
+    height: 120px;
 }
 footer{
     height: 100%;
     background-color: #eee7e2;
     color: #867d76;
 }
-footer div div h2{
-    font-size: 18pt;
-    font-weight: bolder;
-    font-family: 'malang';
-}
 footer div h2{
     font-size: 18pt;
     font-weight: bolder;
     font-family: 'malang';
 }
+footer div div h2{
+    font-size: 18pt;
+    font-weight: bolder;
+    font-family: 'malang';
+}
+
 footer div p{
     font-size: 10pt;
 }
@@ -108,8 +119,7 @@ footer div p{
 article{flex: 3; display: inline-block;}
 aside{flex: 1;}
 
-header{position: relative;
-    margin-top: 20px;}
+header{position: relative;}
 #top_menu{
     color: #afafaf;
     position: absolute;
@@ -121,10 +131,7 @@ header{position: relative;
     height: 100px;
     top: 20px;
 }
-nav{
-    height: 40px;
-    text-align: center;
-}
+
 
 .search{
     border: 2px solid #ffca28;
@@ -161,8 +168,13 @@ button.img-button{
     display: inline-block;
     background-color: #ffca28;
     text-align: center;
-    
 }
+#gotop, #gotop a i:hover{
+    color: #ffca28;
+    background-color: #8c6d62;
+}
+
+
 table{
     outline: none;
 }
@@ -308,6 +320,12 @@ aside div div div div input{
     left: 50%;
     transform: translateX(-50%);
 }
+
+#loginbutton:hover{
+    background-color: #8c6d62;
+    color: #ffffff;
+}
+
 #join{
     margin: 15px 0 0;
     width: 90%;
@@ -321,12 +339,17 @@ aside div div div div input{
     transform: translateX(-50%);
 }
 
+#join:hover{
+    background-color: #8c6d62;
+    color: #ffffff;
+}
+
 section div div{
     margin: 3px;
 }
 
 #pet div div{
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
 }
 #pet div div img{
     border-radius: 20px;
@@ -384,6 +407,23 @@ input::placeholder {
     color: #ffffff;
 }
 
+#allfloat{
+    position: fixed;
+    display: inline-block;
+    bottom: 160px; 
+    right: 0;
+    z-index: 99;
+    width: 140px;
+    height: 80px;
+    border-radius: 20px 0 0 20px;
+    box-shadow:0 2px 5px 0 #00000029,0 2px 10px 0 rgba(0,0,0,0.12)
+}
+
+#allfloat :hover{
+    background-color: #ffca28;
+    color: #8c6d62;
+}
+
 #noticebox{ 
     width: 240px;
     border: 1px solid #cccccc;
@@ -411,3 +451,28 @@ input::placeholder {
     vertical-align: middle;
     padding: 0px 5px 6px 0px;
 }
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */          
+}
+
