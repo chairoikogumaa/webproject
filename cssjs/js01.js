@@ -56,10 +56,7 @@ function login(){
 
 
 }
-function join(){
-    alert("페이지가 준비중입니다.");
-    //document.getElementById("join").innerHTML="<p> 페이지가 준비중입니다. </p>"
-}
+
 
 function kakao(){
     alert("서비스가 준비중입니다.");
