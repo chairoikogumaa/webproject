@@ -116,6 +116,8 @@ footer div p{
 }
 
 
+
+
 article{flex: 3; display: inline-block;}
 aside{flex: 1;}
 
@@ -466,4 +468,24 @@ input::placeholder {
     vertical-align: middle;
     padding: 0px 5px 6px 0px;
 }
+
+
+#rank div div div{
+    border-radius: 10px;
+    height: 360px;
+    font-family: "Noto Sans KR";
+    
+}
+#rank div div div img{
+    border-radius: 10px 10px 0 0;
+    font-family: "Noto Sans KR";
+}
+
+#rank h4{
+    font-family: "Noto Sans KR";
+}
+
+
+
+
 
