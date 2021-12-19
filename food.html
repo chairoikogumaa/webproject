@@ -55,14 +55,14 @@
         </div>
         <header id="header">
             <div id="logo" class="w3-left">
-                <img src="./img/logo.png" id="logo01" alt="logo" width=21% onclick='home()'>
+                <img src="./img/logo.png" id="logo01" alt="logo" width=21% onclick="location.href='index.html'">
             </div>
 
-            <div id="top_menu">
-                <a href="#"  onclick="top_menu();"> 로그인 </a> |
+            <div id="top_menu" >
+                <a href="./login.html"> 로그인 </a> |
                 <a href="./join.html"> 회원가입 </a> |
-                <a href="#"  onclick="top_menu();"> 마이페이지 </a> |
-                <a href="#"  onclick="top_menu();"> 장바구니 </a>
+                <a href="#" onclick="top_menu();"> 마이페이지 </a> |
+                <a href="#" onclick="top_menu();"> 장바구니 </a>
             </div>
             <div id="rja">
                 <form class = 'search'>
@@ -75,8 +75,8 @@
         </header>
         <nav>
             <ul>
-                <li> <a href="#" class="w3-wide"> 기록 </a> </li>
-                <li> <a href="#" class="w3-wide"> 건강 </a> </li>
+                <li> <a href="#" onclick="top_menu();" class="w3-wide"> 기록 </a> </li>
+                <li> <a href="#" onclick="top_menu();" class="w3-wide"> 건강 </a> </li>
                 <li> <a href="./food.html" class="w3-wide"> 식품 </a> </li>
                 <li> <a href="./product.html" class="w3-wide"> 용품 </a> </li>
             </ul>
@@ -196,7 +196,9 @@
                             </div>
                             <div class="w3-quarter w3-content w3-margin-top">
                                 <div class="w3-card container">
+                                    <a href="./f01.html">
                                     <img src="./img/f07.jpg" style="width:100%" class="img">
+                                    </a>
                                     <div class="w3-container w3-center">
                                         <h5>오리젠 독 오리지날 2kg</h5>
                                         <h6>38,500원</h6>
