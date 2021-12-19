@@ -184,5 +184,27 @@ function checkExistData(value, dataName){
 
 //확인 하는 것들이 중요하다!!!
 
+function count(type)  {
+    // 결과를 표시할 element
+    const resultElement = document.getElementById('result');
+    
+    // 현재 화면에 표시된 값
+    let number = resultElement.innerText;
+    
+    const p = parseInt(document.getElementsByName("sell_price").value);
+    const to = document.getElementById('to');
+    // 더하기/빼기
+    if(type === 'plus') {
+        number = parseInt(number) + 1;
+        resultElement.innerText = number;
+        const a = p*number
+        to.innerHTML=a;
+    }else if(type === 'minus')  {
+        number = parseInt(number) - 1;
+        resultElement.innerText = number;
+        const a = p*number
+        to.innerHTML=a;
+    }
 
-function home(){ location.href = '/project/index.html'; }
+  }
+
