@@ -290,3 +290,36 @@ form{
     flex: 1;
     width: 50%;
 }
+
+
+
+
+
+#boxx{
+    display: flex;
+    justify-content: center;
+}
+#loginbox{
+    width: 40%;
+}
+
+#idbox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #afafaf;
+}
+
+#pwbox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #afafaf;
+}
+
+#buttons button{
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    background-color: #ffca28;
+    border-radius: 5px;
+    border: none;
+}
