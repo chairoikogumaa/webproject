@@ -185,3 +185,4 @@ function checkExistData(value, dataName){
 //확인 하는 것들이 중요하다!!!
 
 
+function home(){ location.href = '/project/index.html'; }

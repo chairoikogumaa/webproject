@@ -486,6 +486,20 @@ input::placeholder {
 }
 
 
+#best01{
+    margin: auto;
+}
+
+#best01 div div{
+    border-radius: 10px;
+    font-family: "Noto Sans KR";
+    
+}
+#best01 div div img{
+    border-radius: 10px 10px 0 0;
+    font-family: "Noto Sans KR";
+}
+
 
 
 
