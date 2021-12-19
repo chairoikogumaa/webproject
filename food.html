@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./w3css-master/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./cssjs/css01.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="./favicon/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://code.jquery.com/jquery-latest.js"></script> 
+    <script src="./cssjs/js01.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $('#close').click(function() {
+            $('#pop').hide();
+          });
+        });
+        $(document).ready(function(){
+            document.getElementById("total0").innerHTML=document.getElementsByClassName('img').length;
+         })
+    </script>
+    <title>해피멍스데이</title>
+</head>
+<body class="w3-content" style="max-width:1040px" onload="clickidtext();clickpwtext();">
+    <div id="page">
+
+
+        <div>
+            <div class="top w3-text-white w3-container" id="gotop">
+                <a>
+                    <i class="fa fa-arrow-up w3-display-middle" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <header id="header">
+            <div id="logo" class="w3-left">
+                <img src="./img/logo.png" id="logo01" alt="logo" width=21% onclick='home()'>
+            </div>
+
+            <div id="top_menu">
+                <a href="#"  onclick="top_menu();"> 로그인 </a> |
+                <a href="./join.html"> 회원가입 </a> |
+                <a href="#"  onclick="top_menu();"> 마이페이지 </a> |
+                <a href="#"  onclick="top_menu();"> 장바구니 </a>
+            </div>
+            <div id="rja">
+                <form class = 'search'>
+                    <input class = 'keyword' type = 'text' name = 'search' value = "" autocomplete = "off" placeholder="&nbsp&nbsp 3만원 이상 구매 시 무료 배송">
+                    <button class = "img-button" type = "submit" name = "click" value = "" onclick="rja();">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li> <a href="#" class="w3-wide"> 기록 </a> </li>
+                <li> <a href="#" class="w3-wide"> 건강 </a> </li>
+                <li> <a href="./food.html" class="w3-wide"> 식품 </a> </li>
+                <li> <a href="./product.html" class="w3-wide"> 용품 </a> </li>
+            </ul>
+        </nav>       
+        <br>
+
+
+
+        <div class="w3-container" id="page01">
+            <article>
+
+                <section id="content" class="w3-medium">
+                    <h2> 식품 </h2>
+
+                    <div id="best01" class="w3-row-padding w3-margin-top" style="width: 60%;">
+                        <h4 style="text-align: center;"> 베스트 식품 </h4>
+                        <div class="w3-third w3-content">
+                            <div class="w3-card container">
+                                <img src="./img/01.png" style="width:100%">
+                                <div class="w3-container w3-center">
+                                    <h6>1위</h6>
+                                    <h5>반려소반 닭가슴살</h5>
+                                    <h6>6,900원</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-third w3-content">
+                            <div class="w3-card container">
+                                <img src="./img/02.png" style="width:100%">
+                                <div class="w3-container w3-center">
+                                    <h6>2위</h6>
+                                    <h5>시저 4가지맛, 캔 24개입</h5>
+                                    <h6>29,900원</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-third w3-content">
+                            <div class="w3-card container">
+                                <img src="./img/03.png" style="width:100%">
+                                <div class="w3-container w3-center">
+                                    <h6>3위</h6>
+                                    <h5>펫 스웨트 애견용 이온음료 500ml</h5>
+                                    <h6>2,500원</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <h4 class="w3-margin-top"> total 
+                        <span id="total0">n</span> 
+                        개
+                    </h4>
+                    <div id="rank">
+                        <div id="rank01" class="w3-row-padding w3-margin-top">
+                            <!-- <h4 style="text-align: center;"> 식품 </h4>-->
+
+                            
+
+
+                            <div class="w3-quarter w3-content w3-margin-top">
+                                <div class="w3-card container">
+                                    <img src="./img/f01.jpg" style="width:100%" class="img">
+                                    <div class="w3-container w3-center">
+                                        <h5>네츄럴코어 유기농 에코 6 센시티브 솔루션 연어 중간알갱이 6kg</h5>
+                                        <h6>45,000원</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-quarter w3-content w3-margin-top">
+                                <div class="w3-card container">
+                                    <img src="./img/f02.jpg" style="width:100%" class="img">
+                                    <div class="w3-container w3-center">
+                                        <h5>네츄럴발란스 LID 고구마 & 연어 포뮬라 작은알갱이 3kg</h5>
+                                        <h6>30,000원</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-quarter w3-content w3-margin-top">
+                                <div class="w3-card container">
+                                    <img src="./img/f03.jpg" style="width:100%" class="img">
+                                    <div class="w3-container w3-center">
+                                        <h5>네츄럴코어 유기농 에코 4 오리고기 슬림다운  6kg</h5>
+                                        <h6>46,500원</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-quarter w3-content w3-margin-top">
+                                <div class="w3-card container">
+                                    <img src="./img/f04.jpg" style="width:100%" class="img">
+                                    <div class="w3-container w3-center">
+                                        <h5>네츄럴코어 유기농 에코 9a 시니어 오리 & 고구마 6kg</h5>
+                                        <h6>45,500원</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <br><br><br><br><br>
+                            
+                            <div class="w3-quarter w3-content w3-margin-top">
+                                <div class="w3-card container">
+                                    <img src="./img/f05.jpg" style="width:100%" class="img">
+                                    <div class="w3-container w3-center">
+                                        <h5>로얄캐닌 독 미니 인도어 어덜트 1.5kg</h5>
+                                        <h6>24,900원</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-quarter w3-content w3-margin-top">
+                                <div class="w3-card container">
+                                    <img src="./img/f06.jpg" style="width:100%" class="img">
+                                    <div class="w3-container w3-center">
+                                        <h5>벨포아 독 란트굿 슈마우스 2.5kg</h5>
+                                        <h6>49,000원</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-quarter w3-content w3-margin-top">
+                                <div class="w3-card container">
+                                    <img src="./img/f07.jpg" style="width:100%" class="img">
+                                    <div class="w3-container w3-center">
+                                        <h5>오리젠 독 오리지날 2kg</h5>
+                                        <h6>38,500원</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-quarter w3-content w3-margin-top">
+                                <div class="w3-card container">
+                                    <img src="./img/f08.jpg" style="width:100%" class="img">
+                                    <div class="w3-container w3-center">
+                                        <h5>아카나 독 어덜트 스몰브리드 6kg</h5>
+                                        <h6>59,900원</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        
+                    </div>
+                
+
+
+                </section>
+
+                <br>
+                <section>
+                    <div class="w3-container w3-center">
+                        <div class="w3-bar">
+                          <a href="#" class="w3-button">&laquo;</a>
+                          <a href="#" class="w3-button">1</a>
+                          <a href="#" class="w3-button">2</a>
+                          <a href="#" class="w3-button">3</a>
+                          <a href="#" class="w3-button">4</a>
+                          <a href="#" class="w3-button">&raquo;</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <section id="allfloat">
+                <div class="float1" onclick="kakao();">
+                    <div class="w3-display-container">
+                        <div class="w3-display-middle">
+                            <span class="material-icons" style="font-size: 15pt;"> support_agent </span> 
+                            카카오톡 상담
+                        </div>
+                    </div>
+                </div>
+                <div class="float2" onclick="inquiry();">
+                    <div class="w3-display-container">
+                        <div class="w3-display-middle">
+                            <span class="material-icons"> drive_file_rename_outline </span> 
+                            1:1 문의
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <br><br>
+        <footer class="w3-row-padding w3-padding-16" id="footer">
+            <div class="w3-third">
+                <h2>
+                    <span class="material-icons">support_agent</span>
+                    051-200-700
+                </h2>
+                <p>평일 : 09:00 ~ 18:00 </p> 
+                <p>주말 · 공휴일 : 휴무 </p>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook" style="font-size:24px;color:#867d76">&nbsp;&nbsp;</i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter" style="font-size:24px;color:#867d76">&nbsp;&nbsp;</i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram" style="font-size:24px;color:#867d76">&nbsp;&nbsp;</i></a>
+            </div>
+            <div class="w3-twothird">
+                <div id="footerright">
+                    <h2 id="hmd">해피 멍스 데이</h2>
+                    <p>(주) 해피 멍스 데이 | 대표 : 박솔희 | 사업자등록번호 : 000-00-00000 </p>
+                    <p>개인정보보호책임자 : *** | 주소 :  부산 서구 부민동 2가 1</p>
+                    <p>팩스 : 051-200-700 | 이메일 : ouosolhi512@donga.ac.kr</p>
+                    <div>
+                        <div  style="font-size: 3pt;">Icons made by <a href="https://www.freepik.com" title="Freepik"  style="font-size: 3pt;">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" style="font-size: 3pt;">www.flaticon.com</a></div>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/footer01.jpg" alt="footer" id="ffooter">
+
+            
+        </footer>
+    </div>
+</body>
+</html>
